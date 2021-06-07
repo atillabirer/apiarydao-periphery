@@ -1,6 +1,6 @@
 pragma solidity =0.6.6;
 
-import '@uniswap/v2-core/contracts/interfaces/IPancakeFactory.sol';
+import './interfaces/IPancakeFactory.sol';
 import '@uniswap/lib/contracts/libraries/TransferHelper.sol';
 
 import './libraries/PancakeLibrary.sol';
@@ -20,6 +20,10 @@ contract PancakeRouter01 is IPancakeRouter01 {
     constructor(address _factory, address _WETH) public {
         factory = _factory;
         WETH = _WETH;
+    }
+
+    function pairFor(address token0, address token1) public view returns (address pair) {
+	    return PancakeLibrary.pairFor(factory,token0,token1);
     }
 
     receive() external payable {
