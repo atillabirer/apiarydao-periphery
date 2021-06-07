@@ -1,0 +1,19 @@
+quit()
+Library.pairFor()
+result.address
+const result = await Library.deployed()
+const result = await library.deployed()
+const Library = await library.deploy()
+const library = await hre.ethers.getContractFactory("PancakeLibrary");
+Library.pairFor("0xfbB0f65F010B3B73a66fB1786b99aE73B2464780","0x40E6b7abC5E7fa5681b6e21fde39783f7F38E442");
+await Library.deployed()
+Library.pairFor("0xfbB0f65F010B3B73a66fB1786b99aE73B2464780","0x40E6b7abC5E7fa5681b6e21fde39783f7F38E442");
+const Library = await library.deploy()
+const library = await hre.ethers.getContractFactory("PancakeLibrary");
+RouterContract.pairFor("0xfbB0f65F010B3B73a66fB1786b99aE73B2464780","0x40E6b7abC5E7fa5681b6e21fde39783f7F38E442");
+await RouterContract.pairFor("0xfbB0f65F010B3B73a66fB1786b99aE73B2464780","0x40E6b7abC5E7fa5681b6e21fde39783f7F38E442");
+await RouterContract.pairFor("0xfbB0f65F010B3B73a66fB1786b99aE73B2464780","0x40E6b7abC5E7fa5681b6e21fde39783f7F38E442")İ
+await RouterContract.deployed()
+const RouterContract = await routerContract.deploy("0xbb72e7a0e4783971be6a48e4ca6d0a81481512e8","0x40E6b7abC5E7fa5681b6e21fde39783f7F38E442");
+const RouterContract = await routerContract.deploy()
+const routerContract = await hre.ethers.getContractFactory("PancakeRouter01")
