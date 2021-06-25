@@ -1,5 +1,3 @@
-require('solidity-coverage')
-require('@nomiclabs/hardhat-truffle5')
 require('@nomiclabs/hardhat-ethers')
 require('@nomiclabs/hardhat-etherscan')
 
@@ -19,13 +17,19 @@ task('accounts', 'Prints the list of accounts', async () => {
 // defaultNetwork, networks, solc, and paths.
 // Go to https://buidler.dev/config/ to learn more
 module.exports = {
-  // This is a sample solc configuration that specifies which version of solc to use
+  etherscan: {
+    apiKey: 'Z43NBG8TQ489YT97EJY748V26EJ2V5CBXC'
+  },
+
   solidity: {
     compilers: [
       {
         version: '0.6.6',
         settings: {
-          optimizer: true
+          optimizer: {
+            enabled: true,
+            runs: 200
+          }
         }
       },
       {

@@ -9,10 +9,10 @@ async function main() {
   // await hre.run('compile');
   const signers = await hre.ethers.getSigners()
   // We get the contract to deploy
-  const routerContract = await hre.ethers.getContractFactory('PancakeRouter01')
+  const routerContract = await hre.ethers.getContractFactory('PancakeRouter')
   const RouterContract = await routerContract.deploy(
-    '0x598FBf42613f0825bE7bB33c343d846b25Db14F9',
-    '0xCBD2B5f163dC2A50317251E55e6f27Ee39dA0892'
+    '0x2Ebe26989e5e7006525422f1D9eA8c470BAFE5F0',
+    '0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd'
   )
   await RouterContract.deployed()
   console.log(RouterContract.address)
@@ -22,7 +22,7 @@ async function main() {
 // and properly handle errors.
 main()
   .then(() => process.exit(0))
-  .catch(error => {
+  .catch((error) => {
     console.error(error)
     process.exit(1)
   })
