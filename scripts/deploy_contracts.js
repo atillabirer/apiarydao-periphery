@@ -11,7 +11,7 @@ async function main() {
   // We get the contract to deploy
   const routerContract = await hre.ethers.getContractFactory('PancakeRouter')
   const RouterContract = await routerContract.deploy(
-    '0x2Ebe26989e5e7006525422f1D9eA8c470BAFE5F0',
+    '0x3f5930190eBA9Aef2aD8a093a8CFDaaa08Ed24df',
     '0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd'
   )
   await RouterContract.deployed()
